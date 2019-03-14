@@ -1,15 +1,17 @@
-#Scraper based in configuration per webpage
+# Scraper based in configuration per webpage
 
-##Libraries used
+## Libraries used
+
 requests
 bs4
 urllib.parse
 dateparser
 datetime
 
-##Configuration per webpage
+## Configuration per webpage
 
-###config --> GeneralScraper(url, configObject)
+### config --> GeneralScraper(url, configObject)
+
 for fields boolean, if no there is, by default is False
 config is a dictionary whit this possibles fields:
 
@@ -49,7 +51,8 @@ Indicate if the webpage has pagination
 'selectorItems': string
 Is a selector css that identify pagination area html
 
-###set_map_selector_values()
+### set_map_selector_values()
+
 s = GeneralScraper(url, {
 'hasPagination': True,
 'hasItems': True,
@@ -64,7 +67,9 @@ s.set_map_selector_values({
 'autor': {'type': 'text', 'specification' : { 'path':'.author > span' }}
 }
 })
-####pathContainer
+
+#### pathContainer
+
 the css selector that wrapping the area to scrape inside webpage, is used to delimited area html to scrape
 
 #### fields
