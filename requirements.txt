@@ -1,0 +1,4 @@
+requests=2.21.0
+beautifulsoup=4.7.1
+datetime=4.3
+dateparser=0.7.0
